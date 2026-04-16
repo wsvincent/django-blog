@@ -4,6 +4,8 @@ A simple blog application built with Django. It features a list of all posts and
 
 This project is the companion code for the [Django Blog Tutorial](https://learndjango.com/tutorials/django-blog-tutorial) on LearnDjango.com.
 
+![Demo](django_blog_demo.gif)
+
 ## Requirements
 
 - Python 3.14 
