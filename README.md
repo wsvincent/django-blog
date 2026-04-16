@@ -8,47 +8,30 @@ This project is the companion code for the [Django Blog Tutorial](https://learnd
 
 ## Requirements
 
-- Python 3.14 
-- Django 6.0
+- Python 3.14 & Django 6.0
 
 ## Installation
 
-1. Clone the repository:
-
 ```bash
-git clone https://github.com/wsvincent/django-blog.git
-cd django-blog
-```
+# Clone the repository
+$ git clone https://github.com/wsvincent/django-blog.git
+$ cd django-blog
 
-2. Create and activate a virtual environment:
+# Create and activate a virtual environment:
+$ python -m venv .venv
+$ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
-```bash
-python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-```
+# Install dependencies:
+$ python -m pip install django
 
-3. Install dependencies:
-
-```bash
-pip install django
-```
-
-4. Run the database migrations:
-
-```bash
+# Run the database migrations:
 python manage.py migrate
-```
+ 
+# Create a superuser to access the admin:
+$ python manage.py createsuperuser
 
-5. Create a superuser to access the admin:
-
-```bash
-python manage.py createsuperuser
-```
-
-6. Start the development server:
-
-```bash
-python manage.py runserver
+$ Start the development server:
+$ python manage.py runserver
 ```
 
 The site will be available at http://127.0.0.1:8000. Add posts via the admin at http://127.0.0.1:8000/admin.
